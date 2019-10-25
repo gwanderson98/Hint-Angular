@@ -8,7 +8,6 @@ import { timeout } from 'rxjs/operators';
 })
 export class HintsComponent implements OnInit {
 
-// @Input() display="none";
 @Input() marginTop = "-120px";
 
   constructor() { }
@@ -17,7 +16,6 @@ export class HintsComponent implements OnInit {
   }
 
   getHint(){
- //   this.display="block";
  this.marginTop = "0"
     setTimeout(() => {
       this.setHint();
@@ -25,7 +23,6 @@ export class HintsComponent implements OnInit {
     }
 
   setHint(){
-  //  this.display="none";
   this.marginTop = ""
   }
 
